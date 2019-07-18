@@ -39,6 +39,7 @@ git reset HEAD <file>   // 把暂存区的修改撤销掉（unstage）
 
 git rm <file>   // 删除文件
 
+git rebase --abort    // 终止rebase
 ```
 
 ## 远程仓库相关
