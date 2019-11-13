@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+  document.getElementById("inputsetfocus").focus()
+  // 需要手动在点击一下页面任何地方，取消掉focus  onbeforeunload才会生效
+  window.onbeforeunload = function(e) {
+    return ''
+  }
+</script>
+</html>
