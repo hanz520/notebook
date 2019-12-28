@@ -7,4 +7,4 @@
 * 并且我是一个帅汉子
 
 [GitHub](https://github.com/hanz520/notebook)
-[查看笔记](docs/readme.md)
+[查看笔记](md/introduce.md)
