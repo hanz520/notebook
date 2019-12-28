@@ -2,7 +2,7 @@
 
 ## 基本操作
 
-```
+```bash
 git init    // 初始化git版本库
 
 git add [file]    // 添加文件到暂存区
@@ -44,7 +44,7 @@ git rebase --abort    // 终止rebase
 
 ## 远程仓库相关
 
-```
+```bash
 git remote add origin git@server-name:path/repo-name.git    // 本地库关联一个远程库
 
 git clone git@github.com:michaelliao/gitskills.git    // 复制一个远程仓库
@@ -74,7 +74,7 @@ git rebase    // 变基   将git提交历史变成一条直线
 
 ## 版本管理
 
-```
+```bash
 git checkout -b dev   // git checkout命令加上-b参数表示创建并切换，这里切换到了dev，等同于下面两条命令
 
 git branch dev    // 创建分支dev
@@ -99,7 +99,7 @@ git branch -D <name>    // 强行删除没有合并过的分支
 ```
 
 ## 储藏功能
-```
+```bash
 git stash   // 把当前手头的工作储藏起来，进行其他优先级更高的工作
 
 git stash list  // 查看储藏的工作现场
@@ -113,7 +113,7 @@ git stash pop   // 恢复工作现场，同时把stash内容也删了
 ```
 
 ## 标签管理
-```
+```bash
 git tag <name>    // 打一个新标签
 
 git tag   // 查看标签列表
