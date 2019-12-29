@@ -19,6 +19,9 @@ npm adduser   // 添加用户
 npm publish   // 发布模块
 npm unpublish <package>@<version> // 可以撤销发布自己发布过的某个版本代码
 
+npm pack <Module Name>  // 会生成一个 tgz版本文件
+npm install 路径/文件-1.0.0.tgz // 安装tgz版本文件
+
 ```   
 
 ## 其他命令
@@ -31,6 +34,9 @@ npm update <Module Name>  // 更新模块
 npm search <Module Name> // 搜索模块
 npm view <Module Name> [package.json属性名称] // 查看模块的注册信息
 npm config set prefix <路径>  // 更改npm全局安装路径
+
+npm who am i  // 查看当前登录的用户
+npm login
 ```
 
 ### 版本号定义    
