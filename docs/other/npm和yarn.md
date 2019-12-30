@@ -24,7 +24,7 @@ npm install 路径/文件-1.0.0.tgz // 安装tgz版本文件
 
 ```   
 
-## 其他命令
+### 其他命令
 ```bash
 npm help <command>  // 可查看某条命令的详细帮助，例如npm help install
 npm cache clear   // 清空NPM本地缓存

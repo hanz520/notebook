@@ -1,5 +1,3 @@
-## 安装vue-devtools
-
 1. 克隆一份代码到本地，并选择好需要安装的版本  
 ```bash
 git clone https://github.com/vuejs/vue-devtools.git

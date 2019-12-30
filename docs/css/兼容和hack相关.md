@@ -1,23 +1,21 @@
-## 兼容和hack相关
+## 兼容
 
-### 兼容
-
-#### 1.解决ie下的浮动，margin重叠等一些问题
+### 1.解决ie下的浮动，margin重叠等一些问题
 ```css
 .demo{
   zoom：1;
 }
 ```
-#### 2.ie6双倍行距
+### 2.ie6双倍行距
 ```css
 .demo{
   display:inline  _ ie7 * ie6
 }
 ```
 
-### hack
+## hack
 
-#### 1.clearfix
+### 1.clearfix
 ```css
 .clearfix:after{
   visibility:hidden;
@@ -32,7 +30,8 @@
 }    // 兼容ie
 ```
 
-#### 2.文本溢出  [外链](https://www.html.cn/archives/5206)
+### 2.文本溢出
+[外链](https://www.html.cn/archives/5206)
 - 单行溢出
 ```css
 .demo{
@@ -52,7 +51,7 @@
 }
 ```
 
-#### 3.去除select初始样式
+### 3.去除select初始样式
 ```css
 .demo{
   -webkit-appearance:none;
