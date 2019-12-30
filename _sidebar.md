@@ -11,4 +11,5 @@
   * [命名方式](docs/other/命名方式.md)
   * [一些链接](docs/other/一些链接.md)
   * [npm和yarn](docs/other/npm和yarn.md)
+  * [安装vue-devtools](docs/other/安装vue-devtools.md)
 * [Github](https://github.com/hanz520/notebook)
