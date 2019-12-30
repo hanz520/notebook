@@ -5,6 +5,7 @@
 * JS
   * [JS](docs/JS/JS.md)
   * [ES6学习](docs/JS/ES6学习.md)
+  * [平日开发总结的方法](docs/JS/平日开发总结的方法.md)
 * [Git常用操作](docs/git/git常用操作.md)
 * [Vue](docs/vue/index.md)
 * 其他
