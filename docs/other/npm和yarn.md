@@ -19,7 +19,7 @@ npm adduser   // 添加用户
 npm publish   // 发布模块
 npm unpublish <package>@<version> // 可以撤销发布自己发布过的某个版本代码
 
-npm pack <Module Name>  // 会生成一个 tgz版本文件
+npm pack  // 会生成一个 tgz版本文件
 npm install 路径/文件-1.0.0.tgz // 安装tgz版本文件
 
 ```   

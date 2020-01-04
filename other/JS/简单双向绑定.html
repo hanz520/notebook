@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  </head>
+  <body>
+
+  <input type="text" name="456" data-bind-123="name" />
+  <span data-bind-123="name"></span>
+  
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+  <script>
+    function DataBinder(id) {
+      var $pubSub = $({})
+      var data_attr = `bind-${id}`
+      var myEvent = `${id}:change`
+
+      $(document).on('input', `[data-${data_attr}]`, function(e) {
+        var $input = $(this);
+        $pubSub.trigger(myEvent, [$input.data(data_attr), $input.val()]);
+      })
+
+      $pubSub.on(myEvent, function(e, name, val){ 
+        $(`[data-${data_attr}=${name}]`).each(function() {
+          var $ele = $(this)
+          console.log($ele.is("input,textarea,select"))
+          if($ele.is("input,textarea,select")){
+            $ele.val(val);
+          }else{
+            $ele.html(val);
+          }       
+        })
+      });
+
+      return $pubSub
+    }
+    
+    function User(uid) {
+      var binder = new DataBinder(uid);
+      this.attributes = {}
+      this.set = function(name, val) {
+        this.attributes[name] = val
+        binder.trigger(`${uid}:change`, [name, val])
+      }
+      this.get = function(name) {
+        return this.attributes[name]
+      }
+      this._binder = binder
+    }
+    var user = new User(123)
+    var xx = 'hanz'
+    user.set('name', xx)
+
+
+  </script>
+  </body>
+  </html>  
