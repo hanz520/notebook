@@ -99,7 +99,7 @@
       path: path.resolve(__dirname, './dist'),
       publicPath: '/dist/',
       // filename: 'build.js',
-      filename: 'testPublishComponent.min.js',  // 组件打包后生成的文件名
+      filename: process.env.NODE_ENV == 'development' ? 'build.js' : 'testPublishComponent.min.js',  // 组件打包后生成的文件名
       libraryTarget: 'umd'   //  将组件暴露为所有的模块定义下都可运行的方式
     },
     module: {
@@ -171,6 +171,7 @@
       })
     ])
   }
+
 
   ```
 
