@@ -7,7 +7,9 @@
   * [ES6学习](docs/JS/ES6学习.md)
   * [平日开发总结的方法](docs/JS/平日开发总结的方法.md)
 * [Git常用操作](docs/git/git常用操作.md)
-* [Vue](docs/vue/index.md)
+* Vue
+  * [Vue](docs/vue/index.md)
+  * [制作一个vue组件并打包到npm](docs/vue/制作一个vue组件并打包到npm/main.md)
 * 其他
   * [命名方式](docs/other/命名方式.md)
   * [一些链接](docs/other/一些链接.md)

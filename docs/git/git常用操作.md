@@ -70,6 +70,17 @@ git branch --set-upstream-to=origin/dev dev   // 指定本地dev分支与远程o
 
 git rebase    // 变基   将git提交历史变成一条直线
 
+git push origin dev:dev   // 推送dev分支到远程仓库
+
+git push origin :dev    // 删除远程dev分支
+git push origin --delete dev    // 删除远程dev分支
+
+git checkout -b 本地分支名 origin/远程分支名    // 创一个和远程分支一样的分支 -- 拉取分支
+/** 如果报错：'origin/dev' is not a commit and a branch 'dev' cannot be created from it
+  * 在创建远程分支到本地之前 git pull 就好
+*/
+
+git branch -r 查看远程分支
 ```
 
 ## 版本管理
