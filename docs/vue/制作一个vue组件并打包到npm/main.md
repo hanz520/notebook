@@ -240,5 +240,9 @@
   ![Image text](/03.jpg)      
   2. npm官网创建一个npm账户，并且启动命令行登录
   ![Image text](/04.jpg)    
-  3. 登录成功后，运行`npm publish`发布即可。package.json里面的name名不能与已经发布的包同名。
+  3. 登录成功后，运行`npm publish`发布即可。package.json里面的name名不能与已经发布的包同名。    
+    在发布之前，可以先通过`npm pack`打包一个本地`test-publish-component-1.0.0.tgz`包，在其他项目中你可以通过`npm install 绝对路径/test-publish-component-1.0.0.tgz`安装，试用可行性。
   4. 发布完了之后，就可以通过npm去安装开发的组件了。
+
+
+  [源码链接](https://github.com/hanz520/test-publish-component)
