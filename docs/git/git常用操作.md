@@ -79,6 +79,7 @@ git checkout -b 本地分支名 origin/远程分支名    // 创一个和远程�
 /** 如果报错：'origin/dev' is not a commit and a branch 'dev' cannot be created from it
   * 在创建远程分支到本地之前 git pull 就好
 */
+git push origin 分支名 --force   // 强制提交当前版本号，以达到撤销版本号的目的(撤销推送到远程的commit)
 
 git branch -r 查看远程分支
 ```

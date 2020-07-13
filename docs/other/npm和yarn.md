@@ -88,3 +88,22 @@ yarn info [package]
 yarn config  set global-folder "D:\Software\yarn\global"  //改变 yarn 全局安装位置
 yarn config set cache-folder "你的磁盘路径"   // 改变 yarn 缓存位置
 ```
+
+## 源管理
+
+nrm(npm registry manager )是npm的镜像源管理工具
+
+- 安装
+```
+npm install nrm -g
+```   
+
+- 基本操作
+``` 
+nrm ls    // 查看源列表
+nrm current // 查看当前使用源
+nrm add 名称 远程地址或私服地址   // 添加源
+nrm test 名称   // 测试源速度
+nrm use 名称  // 切换源
+nrm del 名称  // 删除源
+```
