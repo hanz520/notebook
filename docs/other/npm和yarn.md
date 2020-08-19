@@ -107,3 +107,9 @@ nrm test 名称   // 测试源速度
 nrm use 名称  // 切换源
 nrm del 名称  // 删除源
 ```
+
+yrm （yarn对应的源管理）
+- 安装
+```
+npm install yrm -g
+```   
