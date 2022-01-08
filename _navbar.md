@@ -2,6 +2,8 @@
 * [介绍](docs/introduce.md)
 * CSS
   * [CSS兼容和hack相关](docs/css/兼容和hack相关.md)
+  * [BEM定义样式](docs/css/BEM定义样式.md)
+  * [flex](docs/css/flex.md)
 * JS
   * [JS](docs/JS/JS.md)
   * [ES6学习](docs/JS/ES6学习.md)
