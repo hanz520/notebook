@@ -82,6 +82,12 @@ git checkout -b 本地分支名 origin/远程分支名    // 创一个和远程�
 git push origin 分支名 --force   // 强制提交当前版本号，以达到撤销版本号的目的(撤销推送到远程的commit)
 
 git branch -r 查看远程分支
+
+git remote prune origin // 同步远程已删除的分支
+
+git remote update origin --prune // 同步远程已删除的分支
+
+git gc  // 清理不必要的文件并优化本地存储库
 ```
 
 ## 版本管理
@@ -111,6 +117,7 @@ git branch -D <name>    // 强行删除没有合并过的分支
 ```
 
 ## 储藏功能
+
 ```bash
 git stash   // 把当前手头的工作储藏起来，进行其他优先级更高的工作
 
@@ -125,6 +132,7 @@ git stash pop   // 恢复工作现场，同时把stash内容也删了
 ```
 
 ## 标签管理
+
 ```bash
 git tag <name>    // 打一个新标签
 
@@ -145,6 +153,7 @@ git push origin :refs/tags/v0.9   // 本地某个标签已经删除，该命令�
 
 
 ```
+
 **标签总是和某个commit挂钩。如果这个commit既出现在master分支，又出现在dev分支，那么在这两个分支上都可以看到这个标签**
 
 ## 撤回已经推送到远程的代码
